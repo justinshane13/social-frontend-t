@@ -21,7 +21,7 @@ const PostForm = ({topic}) => {
             topic: topic.toLowerCase()
         }
 
-        const response = await fetch('/api/posts', {
+        const response = await fetch('https://social-backend-u3ak.onrender.com/api/posts', {
             method: 'POST',
             body: JSON.stringify(post),
             headers: {
