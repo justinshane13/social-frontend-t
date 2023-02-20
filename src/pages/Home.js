@@ -17,7 +17,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await fetch('/api/posts')
+            const response = await fetch('https://social-backend-u3ak.onrender.com/api/posts')
             const json = await response.json()
             
             if (response.ok) {
