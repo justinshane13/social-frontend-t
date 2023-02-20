@@ -12,7 +12,7 @@ const Post = ({post}) => {
             return
         }
 
-        const response = await fetch(`/api/posts/${post._id}`, {
+        const response = await fetch(`https://social-backend-u3ak.onrender.com/api/posts/${post._id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}`
