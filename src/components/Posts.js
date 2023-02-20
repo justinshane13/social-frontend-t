@@ -33,12 +33,12 @@ const Topics = ({topic, changeTopic}) => {
     return (
         <div className="sidebar">
             <button className="sidebar-button" style={{fontWeight: topic === "General" ? "bold" : "normal"}} onClick={() => changeTopic("General")}><img src="/images/General.png" className="sidebar-icon" alt="topic icon"/>General</button>
-            <button style={{fontWeight: topic === "Career" ? "bold" : "normal"}} onClick={() => changeTopic("Strength")}><img src="/images/Career.png" className="sidebar-icon" alt="topic icon"/>Strength</button>
-            <button style={{fontWeight: topic === "Culture" ? "bold" : "normal"}} onClick={() => changeTopic("Endurance")}><img src="/images/Culture.png" className="sidebar-icon" alt="topic icon"/>Endurance</button>
-            <button style={{fontWeight: topic === "News" ? "bold" : "normal"}} onClick={() => changeTopic("Bodybuilding")}><img src="/images/News.png" className="sidebar-icon" alt="topic icon"/>Bodybuilding</button>
-            <button style={{fontWeight: topic === "Politics" ? "bold" : "normal"}} onClick={() => changeTopic("Athletics")}><img src="/images/Politics.png" className="sidebar-icon" alt="topic icon"/>Athletics</button>
-            <button style={{fontWeight: topic === "Social" ? "bold" : "normal"}} onClick={() => changeTopic("Running")}><img src="/images/Social.png" className="sidebar-icon" alt="topic icon"/>Running</button>
-            <button style={{fontWeight: topic === "Sports" ? "bold" : "normal"}} onClick={() => changeTopic("HIIT")}><img src="/images/Sports.png" className="sidebar-icon" alt="topic icon"/>HIIT</button>
+            <button style={{fontWeight: topic === "Strength" ? "bold" : "normal"}} onClick={() => changeTopic("Strength")}><img src="/images/Career.png" className="sidebar-icon" alt="topic icon"/>Strength</button>
+            <button style={{fontWeight: topic === "Endurance" ? "bold" : "normal"}} onClick={() => changeTopic("Endurance")}><img src="/images/Culture.png" className="sidebar-icon" alt="topic icon"/>Endurance</button>
+            <button style={{fontWeight: topic === "Bodybuilding" ? "bold" : "normal"}} onClick={() => changeTopic("Bodybuilding")}><img src="/images/News.png" className="sidebar-icon" alt="topic icon"/>Bodybuilding</button>
+            <button style={{fontWeight: topic === "Athletics" ? "bold" : "normal"}} onClick={() => changeTopic("Athletics")}><img src="/images/Politics.png" className="sidebar-icon" alt="topic icon"/>Athletics</button>
+            <button style={{fontWeight: topic === "Running" ? "bold" : "normal"}} onClick={() => changeTopic("Running")}><img src="/images/Social.png" className="sidebar-icon" alt="topic icon"/>Running</button>
+            <button style={{fontWeight: topic === "HIIT" ? "bold" : "normal"}} onClick={() => changeTopic("HIIT")}><img src="/images/Sports.png" className="sidebar-icon" alt="topic icon"/>HIIT</button>
         </div>
     )
 }
