@@ -1,6 +1,8 @@
+html,
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   font-family: Poppins;
   background: #FDFDFD;
 }
@@ -253,14 +255,13 @@ input {
 }
 
 .toggle-buttons {
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  border-radius: 10px;
 }
 
 .toggle-button-forum {
@@ -270,9 +271,6 @@ input {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border: 1px solid lightgray;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 
 .toggle-button-workouts {
@@ -282,16 +280,14 @@ input {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border: 1px solid lightgray;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .selected {
-  text-decoration: underline;
+  border-bottom: 4px solid #4420E7;
+  /* text-decoration: underline;
   text-decoration-thickness: 5px;
   text-underline-offset: 14px;
-  text-decoration-color: #4420E7;
+  text-decoration-color: #4420E7; */
 }
 
 /* Posts */
