@@ -35,7 +35,7 @@ const Workouts = () => {
     return (
         <div className="workouts">
             <div className="workout-form-container">
-                <h2>Workouts</h2>
+                <h2 className="workouts-slogan">Search our workouts. Own your health.</h2>
                 <form className="workout-form">
                     <div className="select-container">
                         <label className="workout-label">Muscle group:</label>

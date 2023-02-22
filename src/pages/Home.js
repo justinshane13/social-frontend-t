@@ -53,8 +53,8 @@ const Home = () => {
             <Navbar />
             {width < 800 && 
             <div className='toggle-buttons'>
-                <div onClick={() => setTab('forum')} className={`toggle-button ${tab === 'forum' && 'selected'}`}>Forum</div>
-                <div onClick={() => setTab('workouts')} className={`toggle-button ${tab === 'workouts' && 'selected'}`}>Workouts</div>
+                <div onClick={() => setTab('forum')} className={`toggle-button-forum ${tab === 'forum' && 'selected'}`}>Forum</div>
+                <div onClick={() => setTab('workouts')} className={`toggle-button-workouts ${tab === 'workouts' && 'selected'}`}>Workouts</div>
             </div>
             }
             <div className='posts-and-workouts-container'>

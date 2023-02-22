@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Poppins;
-  background: #FBFBFB;
+  background: #FDFDFD;
 }
 
 label, input {
@@ -193,7 +193,6 @@ input {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #FFF;
 }
 
 .social-logo-container {
@@ -228,17 +227,18 @@ input {
   cursor: pointer;
   font-family: Poppins;
   height: 30px;
-  width: 80%;
+  width: 100%;
   border-radius: 20px;
   padding: 20px 15px;
   display: flex;
   justify-content: left;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .sidebar > button:hover {
   font-weight: bold;
-  background: #FBFBFB;
+  background: #F8F8F8;
 }
 
 .sidebar-icon {
@@ -259,22 +259,39 @@ input {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
-
+  margin-top: 0px;
+  border-radius: 10px;
 }
 
-.toggle-button {
-  width: 200px;
+.toggle-button-forum {
+  width: 50%;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   border: 1px solid lightgray;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.toggle-button-workouts {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .selected {
-  background: beige;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 14px;
+  text-decoration-color: #4420E7;
 }
 
 /* Posts */
@@ -298,10 +315,7 @@ input {
   align-items: center;
   width: 100%;
   max-width: 500px;
-  border: 1px solid lightgray;
-  border-radius: 8px;
-  background: white;
-  padding: 30px 20px;
+  padding: 0px 20px 15px 20px;
 }
 
 .topic-container {
@@ -314,20 +328,31 @@ input {
   position: relative;
 }
 
+.topic-slogan {
+  margin-bottom: 0px;
+}
+
 .topic-trigger {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-top: 20px;
 }
 
-.topic-trigger>h2 {
+.trigger-topic {
   margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .topic-icon {
   height: 25px;
   margin-right: 10px;
+}
+
+.topic-list {
+  width: 200px;
 }
 
 .form-container {
@@ -409,19 +434,19 @@ input {
   align-items: center;
   background: #4420E7;
   border: none;
-  height: 35px;
-  width: 45%;
-  margin-top: 0px;
+  height: 30px;
+  width: 35%;
+  margin-top: 20px;
   border-radius: 10px;
   color: #F1F6FD;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   font-family: Poppins;
 }
 
 .add-icon {
-  width: 20px;
-  margin-left: 10px;
+  width: 16px;
+  margin-left: 7px;
 }
 
 .input-button {
@@ -460,13 +485,12 @@ input {
 
 .post {
   border: .5px solid lightgray;
-  border-radius: 8px;
   display: flex;
   width: 100%;
   max-width: 500px;
   min-width: 300px;
   background-color: #FFFFFF;
-  margin-top: 10px;
+  margin-top: 0px;
   padding: 20px 20px;
 }
 
@@ -523,12 +547,12 @@ input {
 /* Workouts */
 
 .workouts {
+  min-height: 1000px;
   width: 100%;
   max-width: 500px;
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-left: 70px;
   margin-right: 50px;
@@ -541,10 +565,8 @@ input {
   align-items: center;
   width: 100%;
   max-width: 500px;
-  border: 1px solid lightgray;
   border-radius: 10px;
-  background: white;
-  padding: 20px 20px;
+  padding: 0px 20px 15px 20px;
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: Poppins;
@@ -565,6 +587,11 @@ input {
   height: 55px;
 }
 
+.select-container>label {
+  font-weight: bold;
+  font-size: 16px;;
+}
+
 .workout-label {
   font-size: 12px;
   margin-bottom: 5px;
@@ -583,10 +610,9 @@ input {
   max-width: 550px;
   display: flex;
   flex-direction: column;
-  border: 1px solid lightgray;
-  border-radius: 10px;
   width: 100%;
-  background: white;
+  background: #F8F8F8;
+  border-radius: 10px;
   margin-top: 10px;
   padding: 20px 20px;
   font-family: Poppins;
@@ -649,12 +675,49 @@ input {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #FFF;
+    background-color: #FDFDFD;
+    margin-left: 20px;
+    margin-top: 20px;
   }
 
   .posts-and-workouts-container {
     margin-left: 0px;
     margin-top: 30px;
+  }
+
+  .topic-slogan {
+    font-size: 20px;
+  }
+
+  .topic-trigger {
+    margin-top: 10px;
+  }
+
+  .topic-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .trigger-topic {
+    font-size: 16px;
+  }
+
+  .add-post-button {
+    width: 110px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .add-post-button>img {
+    width: 14px;
+  }
+
+  .workouts-slogan {
+    font-size: 16px;
+  }
+
+  .select-container>label {
+    font-size: 12px;
   }
 
 }
