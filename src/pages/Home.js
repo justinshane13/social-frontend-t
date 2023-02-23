@@ -28,10 +28,10 @@ const Home = () => {
         fetchPosts()
     }, [dispatch])
 
-    if (width >= 800 && collapsed) {
+    if (width >= 900 && collapsed) {
         setCollapsed(false)
     }
-    if (width < 800 && !collapsed) {
+    if (width < 900 && !collapsed) {
         setCollapsed(true)
     }
 
@@ -51,7 +51,7 @@ const Home = () => {
     return (
         <div className="homepage">
             <Navbar />
-            {width < 800 && 
+            {width < 900 && 
             <div className='toggle-buttons'>
                 <div onClick={() => setTab('forum')} className={`toggle-button-forum ${tab === 'forum' && 'selected'}`}>Forum</div>
                 <div onClick={() => setTab('workouts')} className={`toggle-button-workouts ${tab === 'workouts' && 'selected'}`}>Workouts</div>

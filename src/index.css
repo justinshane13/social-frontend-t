@@ -62,7 +62,7 @@ input {
   margin-bottom: 10px;
   width: 100%;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 15px;
   box-sizing: border-box;
   padding-left: 15px;
   border: none;
@@ -119,7 +119,7 @@ input {
   margin: 40px auto;
   padding: 60px 30px;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid lightgray;
 }
 
@@ -156,7 +156,7 @@ input {
   height: 40px;
   min-width: 200px;
   max-width: 350px;
-  border-radius: 10px;
+  border-radius: 15px;
   color: #F1F6FD;
   font-size: 16px;
   cursor: pointer;
@@ -177,7 +177,7 @@ input {
   border: none;
   height: 40px;
   min-width: 200px;
-  border-radius: 10px;
+  border-radius: 15px;
   color: #F1F6FD;
   font-size: 16px;
   cursor: pointer;
@@ -388,7 +388,7 @@ input {
   border: none;
   background-color: #FFFFFF;
   border: 1px solid lightgray;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px 20px;
   margin-top: 0px;
   margin-bottom: 20px;
@@ -406,7 +406,7 @@ input {
   background-color: #FFFFFF;
   border: 1px solid lightgray;
   height: 75px;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px 20px;
   margin-top: 0px;
   margin-bottom: 20px;
@@ -434,7 +434,7 @@ input {
   height: 30px;
   width: 35%;
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   color: #F1F6FD;
   font-size: 14px;
   cursor: pointer;
@@ -451,7 +451,7 @@ input {
   border: none;
   height: 35px;
   width: 45%;
-  border-radius: 10px;
+  border-radius: 15px;
   color: #F1F6FD;
   font-size: 16px;
   cursor: pointer;
@@ -467,7 +467,7 @@ input {
   border: none;
   height: 35px;
   width: 45%;
-  border-radius: 10px;
+  border-radius: 15px;
   color: #F1F6FD;
   font-size: 16px;
   cursor: pointer;
@@ -534,7 +534,7 @@ input {
   border: none;
   height: 30px;
   padding: 0px 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   color: #F1F6FD;
   font-size: 12px;
   cursor: pointer;
@@ -680,6 +680,7 @@ input {
   .posts-and-workouts-container {
     margin-left: 0px;
     margin-top: 30px;
+    margin-bottom: 50px;
   }
 
   .topic-slogan {
@@ -707,6 +708,24 @@ input {
 
   .add-post-button>img {
     width: 14px;
+  }
+
+  .posts {
+    min-width: 0px;
+    width: 90%;
+    margin-left: 0px;
+  }
+
+  .post {
+    min-width: 0px;
+    width: 90%;
+  }
+
+  .workouts {
+    min-width: 0px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .workouts-slogan {
