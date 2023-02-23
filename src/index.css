@@ -12,12 +12,22 @@ label, input {
   display: block;
 }
 
+.navbar-container {
+  z-index: 101;
+  width: 100%;
+  background: rgba( 255, 255, 255, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+}
+
+.fixed {
+  position: fixed;
+  top: -50px;
+}
+
 .navbar {
   display: flex;
-  z-index: 101;
-  position: sticky;
-  top: 0;
-  box-shadow: 1px 1px 8px #77777777;
 }
 
 .login-signup-buttons {
@@ -33,7 +43,6 @@ label, input {
   justify-content: flex-end;
   align-items: center;
   padding: 10px 20px;
-  background-color: #FBFBFB;
 }
 
 .logged-username {
@@ -137,20 +146,29 @@ input {
 
 .login-to-signup {
   margin-top: 10px;
+  margin-bottom: 30px;
   font-weight: 300;
 }
 
 .login > input {
   border: 1px solid #ddd;
   max-width: 350px;
+  margin-top: 0px;
 }
 
 .login > input:focus {
   outline: 1px solid green;
 }
 
+.password-requirements {
+  font-size: 10px;
+  width: 330px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
 .login > button {
-  margin-top: 15px;
+  margin-top: 0px;
   background: #4420E7;
   border: none;
   height: 40px;
@@ -204,11 +222,10 @@ input {
   align-items: center;
   padding-left: 20px;
   width: 80%;
-  background-color: #FBFBFB;
 }
 
 .social-logo {
-  width: 30px;
+  width: 20px;
   margin-bottom: 0px;
 }
 
@@ -327,6 +344,7 @@ input {
 
 .topic-slogan {
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .topic-trigger {
@@ -555,6 +573,11 @@ input {
   margin-right: 50px;
 }
 
+.workouts-slogan {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .workout-form-container {
   display: flex;
   flex-direction: column;
@@ -574,6 +597,7 @@ input {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  margin-top: 20px;
 }
 
 .select-container {
@@ -658,6 +682,16 @@ input {
   outline: 2px solid red;
 }
 
+.error-text {
+  color: red;
+  font-size: 10px;
+  width: 330px;
+  margin-bottom: 10px;
+}
+
+.marginTop {
+  padding-top: 100px;
+}
 
 /* tablet & mobile styling */
 
@@ -681,6 +715,22 @@ input {
     margin-left: 0px;
     margin-top: 30px;
     margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .posts {
+    min-width: 0px;
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .post {
+    min-width: 0px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
   }
 
   .topic-slogan {
@@ -708,17 +758,6 @@ input {
 
   .add-post-button>img {
     width: 14px;
-  }
-
-  .posts {
-    min-width: 0px;
-    width: 90%;
-    margin-left: 0px;
-  }
-
-  .post {
-    min-width: 0px;
-    width: 90%;
   }
 
   .workouts {

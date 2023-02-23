@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 const Signup = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [isFocused, setIsFocused] = useState(false)
     const {signup, error, isLoading} = useSignup()
 
     const handleSubmit = async (e) => {
@@ -36,7 +37,11 @@ const Signup = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     value={password}
                     placeholder="Password"
+                    onFocus={() => setIsFocused(true)}
+                    onBlur={() => setIsFocused(false)}
                 />
+                {error && <div className="error-text">{error}</div>}
+                {isFocused && <div className="password-requirements">Note: password must include an uppercase letter, lowercase letter, number, and special character.</div>}
                 <button>Sign up</button>
             </form>
         </div>
