@@ -9,12 +9,10 @@ const Navbar = ({tab, setTab}) => {
     const {logout} = useLogout()
     const width = useWindowWidth()
     const scroll = useWindowScrollPosition()
-
-    console.log(scroll)
     
     return (
-        <div className={`navbar-container ${scroll > 50 ? 'fixed' : ''}`}>
-            <div className="navbar">
+        <div className={`navbar-container ${scroll > 50 && width < 900 ? 'fixed' : ''} ${width >= 900 ? 'shorter' : ''}  ${width >= 900 ? 'fixed-top' : ''}`}>
+            <div className={`navbar`}>
                 <div className="social-logo-container">
                     <img src="/images/Social-Logo.png" alt="social-logo" className="social-logo"/>
                     <p className="social-logo-text">Active</p>

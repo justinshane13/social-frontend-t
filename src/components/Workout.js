@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 const Workout = ({workout}) => {
     const [isExpanded, setIsExpanded] = useState(false)
-    console.log(workout)
 
     const truncateClass = !isExpanded ? "text-truncate" : ""
 

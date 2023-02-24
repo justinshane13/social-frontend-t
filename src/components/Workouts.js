@@ -35,8 +35,8 @@ const Workouts = () => {
     return (
         <div className="workouts">
             <div className="workout-form-container">
-                <h2 className="workouts-slogan">Search new workouts.</h2>
-                <h2 className="workouts-slogan">Own your health.</h2>
+                <h2 className="workouts-slogan">Find new workouts &</h2>
+                <h2 className="workouts-slogan">own your health.</h2>
                 <form className="workout-form">
                     <div className="select-container">
                         <label className="workout-label">Muscle group:</label>

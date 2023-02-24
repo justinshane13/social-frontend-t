@@ -53,7 +53,7 @@ const Home = () => {
     return (
         <div className="homepage">
             <Navbar tab={tab} setTab={setTab} />
-            <div className={`posts-and-workouts-container ${scroll > 50 ? 'marginTop' : ''}`}>
+            <div className={`posts-and-workouts-container ${scroll > 50 && width < 900 ? 'marginTop' : ''}  ${width >= 900 ? 'marginTop' : ''}`}>
                 {(!collapsed || (collapsed && tab === 'forum')) && <Posts topic={topic} changeTopic={changeTopic} isOpen={isOpen} setIsOpen={setIsOpen} />}
                 {(!collapsed || (collapsed && tab === 'workouts')) && <Workouts/>}
             </div>

@@ -11,8 +11,8 @@ const Posts = ({ topic, changeTopic, isOpen, setIsOpen }) => {
         <div className="posts">
             <div className="topic-form-container">
                 <div className="topic-container">
-                    <h2 className="topic-slogan">Choose a topic.</h2>
-                    <h2 className="topic-slogan">Share your thoughts.</h2>
+                    <h2 className="topic-slogan">Choose a topic &</h2>
+                    <h2 className="topic-slogan">share your thoughts.</h2>
                     <div onClick={() => setIsOpen(!isOpen)} className="topic-trigger">
                         <img src={`/images/${topic}.png`} className="topic-icon" alt='topic icon'/>
                         <div className="trigger-topic">{topic}</div>

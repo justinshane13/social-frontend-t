@@ -13,6 +13,7 @@ label, input {
 }
 
 .navbar-container {
+  height: 100px;
   z-index: 101;
   width: 100%;
   background: rgba( 255, 255, 255, 0.4 );
@@ -21,13 +22,24 @@ label, input {
   -webkit-backdrop-filter: blur( 10px );
 }
 
+.shorter {
+  height: 60px;
+}
+
 .fixed {
   position: fixed;
   top: -50px;
 }
 
+.fixed-top {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
 .navbar {
   display: flex;
+  align-items: center;
 }
 
 .login-signup-buttons {
@@ -35,14 +47,51 @@ label, input {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background: #FBFBFB
 }
 
 .logout-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0px 25px;
+}
+
+.toggle-buttons {
+  width: 60%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+.toggle-button-forum {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-button-workouts {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selected {
+  border-bottom: 4px solid #4420E7;
+  /* text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 14px;
+  text-decoration-color: #4420E7; */
 }
 
 .logged-username {
@@ -85,8 +134,8 @@ input {
 .login-button, .signup-button {
   background: #4420E7;
   border: none;
-  height: 30px;
-  width: 100px;
+  height: 27px;
+  width: 80px;
   border-radius: 10px;
   color: #F1F6FD;
   font-size: 12px;
@@ -169,6 +218,24 @@ input {
 
 .login > button {
   margin-top: 0px;
+  background: #4420E7;
+  border: none;
+  height: 40px;
+  min-width: 200px;
+  max-width: 350px;
+  border-radius: 15px;
+  color: #F1F6FD;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  font-family: Poppins;
+}
+
+.guest-button {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #4420E7;
   border: none;
   height: 40px;
@@ -270,42 +337,6 @@ input {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
-}
-
-.toggle-buttons {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-}
-
-.toggle-button-forum {
-  width: 50%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.toggle-button-workouts {
-  width: 50%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.selected {
-  border-bottom: 4px solid #4420E7;
-  /* text-decoration: underline;
-  text-decoration-thickness: 5px;
-  text-underline-offset: 14px;
-  text-decoration-color: #4420E7; */
 }
 
 /* Posts */
@@ -518,7 +549,6 @@ input {
 
 .post-content-container {
   margin-top: 0px;
-  max-width: 500px;
   width: 90%;
   margin-left: 15px;
 }
@@ -610,7 +640,7 @@ input {
 
 .select-container>label {
   font-weight: bold;
-  font-size: 16px;;
+  font-size: 16px;
 }
 
 .workout-label {
@@ -619,11 +649,11 @@ input {
 }
 
 .select-exercise {
-  width: 150px;
+  width: 130px;
   border-radius: 5px;
   height: 25px;
   font-family: Poppins;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .workout {
@@ -768,7 +798,7 @@ input {
   }
 
   .workouts-slogan {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .select-container>label {

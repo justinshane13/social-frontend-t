@@ -5,7 +5,9 @@ import Signup from './pages/Signup'
 import { useAuthContext } from './hooks/useAuthContext'
 
 function App() {
-  const { user } = useAuthContext()
+  const { user, guest } = useAuthContext()
+
+  console.log(guest)
 
   return (
     <div className="App">
@@ -13,15 +15,15 @@ function App() {
         <Routes>
           <Route 
             path="/"
-            element={user ? <Home /> : <Navigate to='/login' />}
+            element={user || guest ? <Home /> : <Navigate to='/login' />}
           />
           <Route 
             path="/login"
-            element={!user ? <Login /> : <Navigate to='/' />}
+            element={!user && !guest  ? <Login /> : <Navigate to='/' />}
           />
           <Route 
             path="/signup"
-            element={!user ? <Signup /> : <Navigate to='/' />}
+            element={!user && !guest ? <Signup /> : <Navigate to='/' />}
           />
         </Routes>
       </BrowserRouter>
