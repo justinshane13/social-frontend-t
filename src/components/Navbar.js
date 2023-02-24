@@ -5,7 +5,7 @@ import { useWindowWidth } from '../hooks/useWindowWidth'
 import { useWindowScrollPosition } from '../hooks/useWindowScrollPosition'
 
 const Navbar = ({tab, setTab}) => {
-    const {user} = useAuthContext()
+    const {user, dispatch} = useAuthContext()
     const {logout} = useLogout()
     const width = useWindowWidth()
     const scroll = useWindowScrollPosition()
@@ -25,8 +25,8 @@ const Navbar = ({tab, setTab}) => {
                 )}
                 {!user && (
                     <div className='login-signup-buttons'>
-                        <Link to="/login" className="login-button">Log in</Link>
-                        <Link to="/signup" className="signup-button">Sign up</Link>
+                        <Link to="/login" className="login-button" onClick={() => dispatch({type: 'LOGOUT', payload: null})}>Log in</Link>
+                        <Link to="/signup" className="signup-button" onClick={() => dispatch({type: 'LOGOUT', payload: null})}>Sign up</Link>
                     </div>
                 )}
             </div>

@@ -1,17 +1,25 @@
 import { useState } from "react"
 import { useSignup } from "../hooks/useSignup"
 import { Link } from 'react-router-dom'
+import { useAuthContext } from "../hooks/useAuthContext"
 
 const Signup = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [isFocused, setIsFocused] = useState(false)
     const {signup, error, isLoading} = useSignup()
+    const {dispatch} = useAuthContext()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
 
         await signup(username, password)
+    }
+
+    const handleGuest = async (e) => {
+        e.preventDefault()
+
+        dispatch({type: 'GUEST', payload: null})
     }
 
     return (
@@ -41,6 +49,7 @@ const Signup = () => {
                 {error && <div className="error-text">{error}</div>}
                 {isFocused && <div className="password-requirements">Note: password must include an uppercase letter, lowercase letter, number, and special character.</div>}
                 <button>Sign up</button>
+                <div className="guest-button" onClick={handleGuest}>Continue as guest</div>
             </form>
         </div>
     )
