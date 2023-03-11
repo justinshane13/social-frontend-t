@@ -47,6 +47,7 @@ label, input {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-weight: normal;
 }
 
 .logout-container {
@@ -100,7 +101,7 @@ label, input {
 }
 
 .logout-button {
-  background: #FBFBFB;
+  background: none;
   color: #4420E7;
   width: 70px;
   border: none;
@@ -108,6 +109,7 @@ label, input {
   font-size: 12px;
   cursor: pointer;
   font-family: Poppins;
+  font-weight: normal;
 }
 
 .logout-button:hover {
@@ -141,6 +143,7 @@ input {
   font-size: 12px;
   cursor: pointer;
   font-family: Poppins;
+  font-weight: normal;
   margin-left: 15px;
   display: flex;
   justify-content: center;
@@ -229,6 +232,7 @@ input {
   cursor: pointer;
   width: 100%;
   font-family: Poppins;
+  font-weight: normal;
 }
 
 .guest-button {
@@ -247,6 +251,7 @@ input {
   cursor: pointer;
   width: 100%;
   font-family: Poppins;
+  font-weight: normal;
 }
 
 .signup-cta {
@@ -268,6 +273,7 @@ input {
   cursor: pointer;
   width: 100%;
   font-family: Poppins;
+  font-weight: normal;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -488,6 +494,7 @@ input {
   font-size: 14px;
   cursor: pointer;
   font-family: Poppins;
+  font-weight: normal;
 }
 
 .add-icon {
@@ -505,6 +512,7 @@ input {
   font-size: 16px;
   cursor: pointer;
   font-family: Poppins;
+  font-weight: normal;
 }
 
 .cancel-button {
@@ -521,6 +529,7 @@ input {
   font-size: 16px;
   cursor: pointer;
   font-family: Poppins;
+  font-weight: normal;
 }
 
 .input-error {
@@ -587,6 +596,7 @@ input {
   font-size: 12px;
   cursor: pointer;
   font-family: Poppins;
+  font-weight: normal;
 }
 
 /* Workouts */
@@ -784,6 +794,7 @@ input {
     width: 110px;
     height: 25px;
     font-size: 12px;
+    font-weight: normal;
   }
 
   .add-post-button>img {
