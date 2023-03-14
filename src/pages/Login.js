@@ -30,7 +30,7 @@ const Login = () => {
             <form className="login" onSubmit={handleSubmit}>
                 <img className='login-social-logo' src='images/Social-Logo.png' alt='Social logo' />
                 <h3 className="login-title">Log in</h3>
-                <p className="login-to-signup">New to Social? <Link to="/signup" className="link">Sign up</Link></p>
+                <p className="login-to-signup">Don't have an account? <Link to="/signup" className="link">Sign up</Link></p>
                 <input 
                     type="text"
                     onChange={(e) => setUsername(e.target.value)}
