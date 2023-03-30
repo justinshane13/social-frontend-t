@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 const Workout = ({workout}) => {
     const [isExpanded, setIsExpanded] = useState(false)
@@ -10,12 +12,15 @@ const Workout = ({workout}) => {
     }
 
     return (
-        <div className="workout">
-            <div className="workout-name">{workout.name}</div>
-            <div className="workout-muscle">{workout.muscle} - {workout.difficulty}</div>
-            <div className={`workout-instructions ${truncateClass}`}>{workout.instructions}</div>
-            <button onClick={() => setIsExpanded(!isExpanded)}><span className="material-symbols-outlined">{`expand_${isExpanded ? 'less' : 'more'}`}</span>See {isExpanded ? 'Less' : 'More'}</button>
-        </div>
+        <Accordion className="workout" id={workout.name}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon/>}>
+                <div className="workout-name">{workout.name}</div>
+                <div className="workout-muscle">{workout.muscle} - {workout.difficulty}</div>
+            </AccordionSummary>
+            <AccordionDetails>
+                <div className={`workout-instructions ${truncateClass}`}>{workout.instructions}</div>
+            </AccordionDetails>
+        </Accordion>
     )
 }
 

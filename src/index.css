@@ -697,14 +697,16 @@ input {
 .workout-instructions {
   font-size: 12px;
   margin-top: 10px;
+  max-height: 500px;
+  transition: max-height 1s ease;
 }
 
 .text-truncate {
   display: inline-block;
   max-width: 500px;
-  white-space: nowrap;
+  max-height: 20px;
   overflow: hidden;
-  text-overflow: ellipsis;
+  transition: max-height 1s ease;
 }
 
 .workout > button {
