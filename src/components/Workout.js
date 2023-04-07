@@ -18,7 +18,7 @@ const Workout = ({workout}) => {
                 <div className="workout-muscle">{workout.muscle} - {workout.difficulty}</div>
             </AccordionSummary>
             <AccordionDetails>
-                <div className={`workout-instructions ${truncateClass}`}>{workout.instructions}</div>
+                <div className={`workout-instructions`}>{workout.instructions}</div>
             </AccordionDetails>
         </Accordion>
     )
