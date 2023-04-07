@@ -12,7 +12,7 @@ const Workout = ({workout}) => {
     }
 
     return (
-        <Accordion className="workout" id={workout.name}>
+        <Accordion id={workout.name}>
             <AccordionSummary expandIcon={<ExpandMoreIcon/>}>
                 <div className="workout-name">{workout.name}</div>
                 <div className="workout-muscle">{workout.muscle} - {workout.difficulty}</div>

@@ -677,7 +677,7 @@ input {
   flex-direction: column;
   width: 100%;
   background: #F8F8F8;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-top: 10px;
   padding: 20px 20px;
   font-family: Poppins;
@@ -692,6 +692,7 @@ input {
 .workout-muscle {
   font-size: 10px;
   align-self: center;
+  margin-left: 10px;
 }
 
 .workout-instructions {
