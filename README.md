@@ -1,4 +1,4 @@
-# Social
+# Active
 
 An application to share and read ideas about exercise with others. Users can also use an exercise generator within the application.
 
