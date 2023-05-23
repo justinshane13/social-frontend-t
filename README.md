@@ -1,6 +1,6 @@
 # Social
 
-An application to share ideas about exercise with others. Users can also use an exercise generator in the application.
+An application to share and read ideas about exercise with others. Users can also use an exercise generator within the application.
 
 ## Features
 
@@ -11,7 +11,8 @@ An application to share ideas about exercise with others. Users can also use an 
 ## Technology
 
 - ReactJS
+- CSS
 - NodeJS
 - ExpressJS
+- JSON Web Tokens
 - Exercises API
-- CSS
