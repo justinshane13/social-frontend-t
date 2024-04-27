@@ -19,8 +19,8 @@ const Home = () => {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await fetch('https://social-backend-u3ak.onrender.com/api/posts')
-            const json = await response.json()
+            const response = await fetch('https://social-backend-t.onrender.com/api/posts')
+            const json = await response.json()https://social-backend-t.onrender.com
             
             if (response.ok) {
                 dispatch({type: 'SET_POSTS', payload: json})
@@ -40,7 +40,7 @@ const Home = () => {
     const changeTopic = async (newTopic) => {
         setTopic(newTopic)
 
-        const response = await fetch(`https://social-backend-u3ak.onrender.com/api/posts/${newTopic.toLowerCase()}`)
+        const response = await fetch(`https://social-backend-t.onrender.com/api/posts/${newTopic.toLowerCase()}`)
         const json = await response.json()
 
         if (response.ok) {
