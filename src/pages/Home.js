@@ -20,7 +20,7 @@ const Home = () => {
     useEffect(() => {
         const fetchPosts = async () => {
             const response = await fetch('https://social-backend-t.onrender.com/api/posts')
-            const json = await response.json()https://social-backend-t.onrender.com
+            const json = await response.json()
             
             if (response.ok) {
                 dispatch({type: 'SET_POSTS', payload: json})
