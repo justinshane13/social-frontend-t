@@ -5,7 +5,8 @@ body {
   width: 100%;
   overflow-x: hidden;
   font-family: Poppins;
-  background: #FDFDFD;
+  background: #1E252B;
+  color: #F1F6FD;
 }
 
 label, input {
@@ -13,12 +14,15 @@ label, input {
 }
 
 .navbar-container {
+  display: flex;
+  align-items: center;
   height: 100px;
   z-index: 101;
   width: 100%;
-  background: rgba( 255, 255, 255, 0.4 );
+  background: #262D34;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 10px );
+  padding: 5px 0px;
   -webkit-backdrop-filter: blur( 10px );
 }
 
@@ -40,6 +44,8 @@ label, input {
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .login-signup-buttons {
@@ -58,15 +64,18 @@ label, input {
 }
 
 .toggle-buttons {
-  width: 60%;
-  height: 50px;
+  width: 80%;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
+  margin-top: 20px;
   font-size: 14px;
+  background: #262D34;
+  border-radius: 10px;
+  padding: 5px 20px;
 }
 
 .toggle-button-forum {
@@ -76,6 +85,7 @@ label, input {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .toggle-button-workouts {
@@ -85,10 +95,11 @@ label, input {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .selected {
-  border-bottom: 4px solid #4420E7;
+  background-color: #2C353D;
   /* text-decoration: underline;
   text-decoration-thickness: 5px;
   text-underline-offset: 14px;
@@ -102,7 +113,7 @@ label, input {
 
 .logout-button {
   background: none;
-  color: #4420E7;
+  color: #F1F6FD;
   width: 70px;
   border: none;
   height: 30px;
@@ -295,17 +306,21 @@ input {
   align-items: center;
   padding-left: 20px;
   width: 80%;
+  margin-right: auto;
 }
 
 .social-logo {
-  width: 20px;
+  width: 50px;
   margin-bottom: 0px;
 }
 
 .social-logo-text {
-  font-size: 18px;
-  margin-left: 10px;
+  font-size: 1.5em;
+  margin-left: 15px;
   font-weight: bold;
+  color: #E9E7E4;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .link {
@@ -327,11 +342,12 @@ input {
   justify-content: left;
   align-items: center;
   margin-bottom: 10px;
+  color: #F1F6FD;
 }
 
 .sidebar > button:hover {
   font-weight: bold;
-  background: #F8F8F8;
+  background: #2C353D;
 }
 
 .sidebar-icon {
@@ -543,13 +559,13 @@ input {
 }
 
 .post {
-  border: .5px solid lightgray;
+  border-radius: 10px;
   display: flex;
-  width: 100%;
+  width: 90%;
   max-width: 500px;
   min-width: 300px;
-  background-color: #FFFFFF;
-  margin-top: 0px;
+  background: #262D34;
+  margin-top: 20px;
   padding: 20px 20px;
 }
 
@@ -744,6 +760,10 @@ input {
 
 @media screen and (max-width: 900px) {
 
+  .navbar-container {
+    height: 70px;
+  }
+
   .navbar {
     height: 50px;
   }
@@ -753,9 +773,31 @@ input {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #FDFDFD;
+    background-color: #1E252B;
     margin-left: 20px;
     margin-top: 20px;
+  }
+
+  .sidebar > button {
+    background: none;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-family: Poppins;
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #F1F6FD;
+  }
+  
+  .sidebar > button:hover {
+    font-weight: bold;
+    background: #2C353D;
   }
 
   .posts-and-workouts-container {

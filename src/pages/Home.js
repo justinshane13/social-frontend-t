@@ -52,7 +52,13 @@ const Home = () => {
 
     return (
         <div className="homepage">
-            <Navbar tab={tab} setTab={setTab} />
+            <Navbar/>
+            {width < 900 && 
+            <div className='toggle-buttons'>
+                <div onClick={() => setTab('forum')} className={`toggle-button-forum ${tab === 'forum' && 'selected'}`}>Forum</div>
+                <div onClick={() => setTab('workouts')} className={`toggle-button-workouts ${tab === 'workouts' && 'selected'}`}>Workouts</div>
+            </div>
+            }
             <div className={`posts-and-workouts-container ${scroll > 50 && width < 900 ? 'marginTop' : ''}  ${width >= 900 ? 'marginTop' : ''}`}>
                 {(!collapsed || (collapsed && tab === 'forum')) && <Posts topic={topic} changeTopic={changeTopic} isOpen={isOpen} setIsOpen={setIsOpen} />}
                 {(!collapsed || (collapsed && tab === 'workouts')) && <Workouts/>}

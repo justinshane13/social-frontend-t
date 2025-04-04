@@ -14,7 +14,7 @@ const Navbar = ({tab, setTab}) => {
         <div className={`navbar-container ${scroll > 50 && width < 900 ? 'fixed' : ''} ${width >= 900 ? 'shorter' : ''}  ${width >= 900 ? 'fixed-top' : ''}`}>
             <div className={`navbar`}>
                 <div className="social-logo-container">
-                    <img src="/images/Social-Logo.png" alt="social-logo" className="social-logo"/>
+                    <img src="/images/social-logo-2.png" alt="social-logo" className="social-logo"/>
                     <p className="social-logo-text">Active</p>
                 </div>
                 {user && (
@@ -30,12 +30,6 @@ const Navbar = ({tab, setTab}) => {
                     </div>
                 )}
             </div>
-            {width < 900 && 
-            <div className='toggle-buttons'>
-                <div onClick={() => setTab('forum')} className={`toggle-button-forum ${tab === 'forum' && 'selected'}`}>Forum</div>
-                <div onClick={() => setTab('workouts')} className={`toggle-button-workouts ${tab === 'workouts' && 'selected'}`}>Workouts</div>
-            </div>
-            }
         </div>
     )
 }
